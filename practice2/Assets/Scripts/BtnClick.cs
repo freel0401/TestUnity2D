@@ -28,8 +28,6 @@ public Entity e;
 		string name = "测试1";
 		int age = 1;
 		string sex = "男";
-		// Vector3 v3;
-		// v3.Set(0.0, 0.0, 0.0);
 		Entity entity = Instantiate(e, new Vector3(0, 0, 0),Quaternion.identity);
         entity.Add( name, age, sex);
 	}
