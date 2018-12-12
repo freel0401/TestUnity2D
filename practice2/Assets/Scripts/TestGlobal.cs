@@ -2,18 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestGlobal : MonoBehaviour {
+public class TestGlobal : MonoBehaviour{
+	void onStart()
+	{}
+}
+public class Global {
 
-	// Use this for initialization
-	void Start () {
-
-	}
-
-	// Update is called once per frame
-	void Update () {
-
-	}
-	public void TestFunc()
+	static public void TestFunc()
 	{
 		Debug.Log("lsllslsl");
 	}

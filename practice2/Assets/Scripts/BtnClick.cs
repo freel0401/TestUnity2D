@@ -17,19 +17,18 @@ public class BtnClick : MonoBehaviour {
 public Entity e;
     public void showText(){
 		Debug.Log("FFFFFFF");
-		var tg = GameObject.Find("Global").GetComponent<TestGlobal>();
-		tg.TestFunc();
-        var textFile = Resources.Load<TextAsset>("test");
-        var data = JsonUtility.FromJson<TestData>(textFile.text);
-		Debug.Log(data.a);
-		var textCom = GameObject.Find("Canvas/TextName").GetComponent<Text>();
-		float num = Random.value;
-		textCom.text = "测试名字" + num.ToString();
-		string name = "测试1";
-		int age = 1;
-		string sex = "男";
-		Entity entity = Instantiate(e, new Vector3(0, 0, 0),Quaternion.identity);
-        entity.Add( name, age, sex);
+		Global.TestFunc();
+        // var textFile = Resources.Load<TextAsset>("test");
+        // var data = JsonUtility.FromJson<TestData>(textFile.text);
+		// Debug.Log(data.a);
+		// var textCom = GameObject.Find("Canvas/TextName").GetComponent<Text>();
+		// float num = Random.value;
+		// textCom.text = "测试名字" + num.ToString();
+		// string name = "测试1";
+		// int age = 1;
+		// string sex = "男";
+		// Entity entity = Instantiate(e, new Vector3(0, 0, 0),Quaternion.identity);
+        // entity.Add( name, age, sex);
 	}
 
 	public void Click()
